@@ -1,0 +1,39 @@
+.wrapper-register {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .register {
+    padding: 0 8rem;
+    height: 100vh;
+    width: 100%;
+  
+    display: flex;
+    align-items: center;
+  }
+  
+  .image-register {
+    flex: 2;
+    display: flex;
+    align-items: center; /* Vertical centering */
+    justify-content: center;
+    height: 100vh;
+  }
+  
+  .content-register {
+    flex: 1;
+  }
+  
+  .bg-white {
+    position: absolute;
+    top: 3rem;
+    left: -55rem;
+    width: 90rem;
+    height: 90rem;
+    transform: rotate(35deg);
+    background-color: #fff;
+    z-index: -1;
+  }
+  

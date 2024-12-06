@@ -1,0 +1,123 @@
+nav .wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+  height: 3rem;
+  width: 100%;
+  background-color: transparent;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 2rem;
+  z-index: 1000; /* Pastikan navbar berada di atas elemen lainnya */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+}
+
+nav .logo {
+  display: flex;
+  gap: 3rem;
+}
+
+nav .logo a {
+  letter-spacing: 1px;
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+.nav-list {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.nav-list li {
+  list-style: none;
+}
+
+.nav-list li a {
+  position: relative;
+  font-weight: 500;
+  font-size: 13px;
+  color: #eaeaea;
+}
+
+.nav-list li a::before {
+  content: "";
+  position: absolute;
+  margin-top: 4px;
+  top: 100%;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #fff;
+  transition: 0.3s all ease-in-out;
+}
+
+.nav-list li a:hover::before {
+  width: 100%;
+}
+
+.nav-list li a:hover {
+  color: #fff;
+}
+
+.menu ul {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.menu ul li {
+  list-style: none;
+}
+
+.menu ul li input {
+  height: 1.5rem;
+  width: 15rem;
+  background-color: #fff;
+  border: none;
+  outline: none;
+  border-radius: 40px;
+  font-size: 13px;
+  color: #333;
+  padding: 10px 20px;
+  font-weight: 600;
+}
+
+.menu ul li input::placeholder {
+  color: #7c7c7c;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+
+.category {
+    position: relative;
+}
+
+.category .icon {
+    position: absolute;
+    right: -20px;
+    top: 65%;
+    transform: translateY(-50%);
+    font-size: 18px;
+}
+
+
+.search {
+    position: relative;
+}
+
+.search .icon {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 18px;
+    color: #333;
+}
+
+.photoProfile img {
+  border-radius: 50%;
+}
